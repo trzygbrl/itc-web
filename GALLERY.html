@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <style>
+         h1{
+        background-color: rgba(50,50,50,0.6);
+        background-image: url(sour.jpeg);
+        background-blend-mode:color;
+        background-size: contain;
+        font-family: "Allura", cursive;
+        font-weight: 400;
+        font-style:normal;
+        font-size: 90px;
+        margin:auto;
+        padding: 1%;
+        text-align: center;
+        color: white;
+         }
+         .btn{
+        background-color: #665FD1;
+        width: 372.5px;
+        border-style:solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-width: 5px;
+        border-color: white;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 20px;
+        padding: 1%;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+         }
+        .btn:hover{
+        background-color: #39356f;
+        }
+        .ref{
+        color: white;
+        text-decoration: none;
+        font-family: "Shadows Into Light", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .gallery{
+            background-color: white;
+            margin: auto;
+            padding: 2%;
+            width: 1000px;
+        }
+        .imgH{
+            width: 300px;
+            height: 200px;
+            transition: width 1s, height 1s;
+        }
+        .imgH:hover{
+            width: 320px;
+            height: 210px;
+        }
+        .imgV{
+            width: 200px;
+            height: 300px;
+            transition: width 1s, height 1s;
+        }
+        .imgV:hover{
+            width: 220px;
+            height: 320px;
+        }
+    </style>
+    <title>Olivia | Gallery</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    </head>
+    <body style="background-color:#CCCCFF;">
+        <h1>Olivia's Gallery</h1>
+        <nav>
+            <button class="btn"><a class="ref" href ="HOME.html">HOME</a></button>
+            <button class="btn"><a class="ref" href ="MOVIES.html">MOVIES/SHOWS</a></button>
+            <button class="btn"><a class="ref" href ="ALBUMS.html">ALBUMS</a></button>
+            <button class="btn"><a class="ref" href ="ABOUT.html">ABOUT US</a></button>
+        </nav>
+        <br>
+        <p class="gallery">
+            <img class="imgH"src = "sour.jpeg">
+            <img class="imgH"src = "head.jpg">
+            <img class="imgH"src = "1.jpg">
+            <img class="imgV"src = "pretty.jpg">
+            <img class="img">
+        </p>
+    </body>
+</html>
