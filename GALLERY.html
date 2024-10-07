@@ -41,30 +41,89 @@
         font-weight: 400;
         font-style: normal;
         }
-        .gallery{
-            background-color: white;
-            margin: auto;
-            padding: 2%;
-            width: 1000px;
-        }
-        .imgH{
-            width: 300px;
-            height: 200px;
-            transition: width 1s, height 1s;
-        }
-        .imgH:hover{
-            width: 320px;
-            height: 210px;
-        }
-        .imgV{
-            width: 200px;
-            height: 300px;
-            transition: width 1s, height 1s;
-        }
-        .imgV:hover{
-            width: 220px;
-            height: 320px;
-        }
+        
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 280px;
+        height: fit-content;
+    }
+
+    .video{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+           margin: 30px;
+    }
+
+    .video video {
+        width: 1210px;
+        height: auto;
+    }
+
+    .gallery2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 30px;
+        align-items: center ;
+    }
+
+    .gallery2 img {
+        width: 590px;
+        height: fit-content;
+    }
+
+    .gallery3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .gallery3 img {
+        width: 383px;
+        height: fit-content;
+    }        
+
+    .vid1 {
+        width: 383px;
+    }
+
+    .gallery4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    gap: 30px;
+    }
+
+    .gallery4 img {
+    width: 280px;
+    height: fit-content;
+    }
+
+    .gallery5 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    gap: 30px;
+    }
+
+    .gallery5 img {
+    width: 1210px;
+    height: fit-content;
+    }
     </style>
     <title>Olivia | Gallery</title>
     <head>
@@ -85,12 +144,42 @@
             <button class="btn"><a class="ref" href ="ABOUT.html">ABOUT US</a></button>
         </nav>
         <br>
-        <p class="gallery">
-            <img class="imgH"src = "sour.jpeg">
-            <img class="imgH"src = "head.jpg">
-            <img class="imgH"src = "1.jpg">
-            <img class="imgV"src = "pretty.jpg">
-            <img class="img">
-        </p>
-    </body>
+       <div class = "gallery">
+                <img src = "IMG_01.jpg">
+                <img src ="IMG_0498.jpg">
+                <img src = "IMG_0497.jpg">
+                <img src = "IMG_02.jpg">
+            </div>
+
+            <div class = "video">
+                <video controls>
+                    <source src = "IMG_3597.mp4">
+            </div>
+
+            <div class = "gallery2">
+                <img src = "IMG_04.jpg" class="img4">
+                <img src = "IMG_05.jpg" class="img5">
+            </div>
+        
+            <div class = "gallery3">
+                <img src = "IMG_03.jpg">
+                <video controls class = "vid1">
+                    <source src = "IMG_0359.mp4">
+                </video>
+                <img src = "IMG_07.jpg">
+            </div>
+            
+            <div class = "gallery4">
+                <img src = "IMG_099.jpg">
+                <img src = "IMG_011.jpg">
+                <img src = "IMG_10.jpg">
+                <img src = "IMG_091.jpg">
+            </div>
+
+            <div class = "gallery5">
+                <img src = "IMG_0496.jpg">
+            </div>
+
+        </div>
+        </body>
 </html>
